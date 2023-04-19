@@ -18,15 +18,14 @@ import streamlit as st
 
 st.title("Greater number")
 
-def main():
-    n1=st.number_input("Enter first number:")
-    n2=st.number_input("Enter second number:")
-    n3=st.number_input("Enter third number:")
-    if st.button("Find largest"):
-      if n1>n2 and n1>n3:
-        ln=n1
-      elif n2>n1 and n2>n3:
-        ln=n2
-      else:
-        ln=n3
-    st.write("lagest is",ln)
+n1=st.number_input("Enter first number:")
+n2=st.number_input("Enter second number:")
+n3=st.number_input("Enter third number:")
+if st.button("Find largest"):
+   if n1>n2 and n1>n3:
+      ln=n1
+   elif n2>n1 and n2>n3:
+      ln=n2
+   else:
+      ln=n3
+   st.write("lagest is",ln)
